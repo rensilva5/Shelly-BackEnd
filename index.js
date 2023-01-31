@@ -17,20 +17,6 @@ app.use(cors());
 
 const PORT = 3002;
 
-// // useEffect(() => {
-//     // fetch("http://192.168.15.35/#/json")
-//     fetch("http://192.168.15.35/rpc/Switch.GetStatus?id=0")
-//     // fetch("http://localhost:8000/posts")
-//     .then(res => {
-//       return res.json()
-//     })
-//     .then((data) => {
-//       console.log(data)
-//     //   setPosts(data)
-//     })
-// //   }, [])
-
-
 app.get("/devices", getAllDevices);
 app.post("/devices", addNewDevice);
 app.get("/fetch", async (req, res) => {
